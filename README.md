@@ -36,6 +36,7 @@ docker-compose exec workspace composer install
 
 * Laravel 5.4
 * Php 7.2
+* NodeJS for Websocket Realtime communication
 
 ## Versioning
 
