@@ -1,0 +1,1 @@
+Tenancy for '{{$property_title}}' is approaching notice period please make renewal offer.

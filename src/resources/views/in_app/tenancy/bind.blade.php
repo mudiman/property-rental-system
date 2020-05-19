@@ -1,0 +1,1 @@
+Tenancy agreement for '{{$property_title}}' has been signed and is now binding.

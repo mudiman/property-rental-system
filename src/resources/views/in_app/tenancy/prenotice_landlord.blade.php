@@ -1,0 +1,1 @@
+Please remember to inform {{$tenant_first_name}} that the tenancy agreement for '{{$property_title}}' is approaching its notice period.

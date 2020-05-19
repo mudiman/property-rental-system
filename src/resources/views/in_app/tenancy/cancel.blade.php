@@ -1,0 +1,1 @@
+Tenancy for property '{{$property_title}}' has been cancelled

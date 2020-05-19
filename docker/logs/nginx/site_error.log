@@ -1,0 +1,219 @@
+2020/05/14 09:14:04 [info] 11#11: *1 client closed connection while waiting for request, client: 172.25.0.1, server: 0.0.0.0:80
+2020/05/14 09:16:00 [info] 11#11: *24 client closed connection while waiting for request, client: 172.25.0.1, server: 0.0.0.0:80
+2020/05/14 09:27:00 [info] 11#11: *46 client closed connection while waiting for request, client: 172.25.0.1, server: 0.0.0.0:80
+2020/05/14 09:28:00 [info] 12#12: *68 client timed out (110: Operation timed out) while waiting for request, client: 172.25.0.1, server: 0.0.0.0:80
+2020/05/14 09:29:07 [info] 11#11: *90 client closed connection while waiting for request, client: 172.25.0.1, server: 0.0.0.0:80
+2020/05/14 09:29:24 [info] 12#12: *112 client closed connection while waiting for request, client: 172.25.0.1, server: 0.0.0.0:80
+2020/05/14 09:37:25 [error] 9#9: *2 FastCGI sent in stderr: "Access to the script '/var/www' has been denied (see security.limit_extensions)" while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost"
+2020/05/14 09:38:25 [info] 9#9: *1 client timed out (110: Operation timed out) while waiting for request, client: 172.27.0.1, server: 0.0.0.0:80
+2020/05/14 09:43:53 [error] 9#9: *4 FastCGI sent in stderr: "Access to the script '/var/www' has been denied (see security.limit_extensions)" while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost"
+2020/05/14 09:44:53 [info] 9#9: *5 client timed out (110: Operation timed out) while waiting for request, client: 172.27.0.1, server: 0.0.0.0:80
+2020/05/14 09:57:56 [info] 10#10: *2 client closed connection while waiting for request, client: 172.31.0.1, server: 0.0.0.0:80
+2020/05/14 09:57:58 [error] 11#11: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php:461
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/adodb/adodb-php/adodb.inc.php(688): ADODB_mysql->_connect('mariadb', 'default', 'secret', '')
+#1 /var/www/lib/pkp/classes/db/DBConnection.inc.php(162): ADOConnection->Connect('mariadb', 'default', 'secret', NULL, false)
+#2 /var/www/lib/pkp/classes/db/DBConnection.inc.php(137): DBConnection->connect()
+#3 /var/www/lib/pkp/classes/db/DBConnection.inc.php(124): DBConnection->initConn()
+#4 /var/www/lib/pkp/classes/db/DBConnection.inc.php(56): DBConnection->initCustomDBConnection('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#5 /var/www/lib/pkp/classes/install/PKPInstall.inc.php(77): DBConnection->__construct('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#6 /var/www/lib/pkp/classes/install/Installer.inc.php(178): PKPInstall->preInstall()
+#7 /var/www/lib/pkp/classes/install/form/InstallForm.inc.php(196): I in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php on line 461" while reading response header from upstream, client: 172.31.0.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://172.31.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 09:58:56 [info] 11#11: *7 client timed out (110: Operation timed out) while waiting for request, client: 172.31.0.1, server: 0.0.0.0:80
+2020/05/14 10:17:25 [error] 10#10: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php:461
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/adodb/adodb-php/adodb.inc.php(688): ADODB_mysql->_connect('mariadb', 'default', 'secret', '')
+#1 /var/www/lib/pkp/classes/db/DBConnection.inc.php(162): ADOConnection->Connect('mariadb', 'default', 'secret', NULL, false)
+#2 /var/www/lib/pkp/classes/db/DBConnection.inc.php(137): DBConnection->connect()
+#3 /var/www/lib/pkp/classes/db/DBConnection.inc.php(124): DBConnection->initConn()
+#4 /var/www/lib/pkp/classes/db/DBConnection.inc.php(56): DBConnection->initCustomDBConnection('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#5 /var/www/lib/pkp/classes/install/PKPInstall.inc.php(77): DBConnection->__construct('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#6 /var/www/lib/pkp/classes/install/Installer.inc.php(178): PKPInstall->preInstall()
+#7 /var/www/lib/pkp/classes/install/form/InstallForm.inc.php(196): I in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php on line 461" while reading response header from upstream, client: 172.31.0.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://172.31.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 10:17:42 [info] 10#10: *10 client closed connection while waiting for request, client: 172.31.0.1, server: 0.0.0.0:80
+2020/05/14 10:21:56 [error] 9#9: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php:461
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/adodb/adodb-php/adodb.inc.php(688): ADODB_mysql->_connect('mariadb', 'default', 'secret', '')
+#1 /var/www/lib/pkp/classes/db/DBConnection.inc.php(162): ADOConnection->Connect('mariadb', 'default', 'secret', NULL, false)
+#2 /var/www/lib/pkp/classes/db/DBConnection.inc.php(137): DBConnection->connect()
+#3 /var/www/lib/pkp/classes/db/DBConnection.inc.php(124): DBConnection->initConn()
+#4 /var/www/lib/pkp/classes/db/DBConnection.inc.php(56): DBConnection->initCustomDBConnection('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#5 /var/www/lib/pkp/classes/install/PKPInstall.inc.php(77): DBConnection->__construct('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#6 /var/www/lib/pkp/classes/install/Installer.inc.php(178): PKPInstall->preInstall()
+#7 /var/www/lib/pkp/classes/install/form/InstallForm.inc.php(196): I in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php on line 461" while reading response header from upstream, client: 192.168.16.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.16.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 10:23:02 [error] 9#9: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php:461
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/adodb/adodb-php/adodb.inc.php(688): ADODB_mysql->_connect('mariadb', 'default', 'secret', '')
+#1 /var/www/lib/pkp/classes/db/DBConnection.inc.php(162): ADOConnection->Connect('mariadb', 'default', 'secret', NULL, false)
+#2 /var/www/lib/pkp/classes/db/DBConnection.inc.php(137): DBConnection->connect()
+#3 /var/www/lib/pkp/classes/db/DBConnection.inc.php(124): DBConnection->initConn()
+#4 /var/www/lib/pkp/classes/db/DBConnection.inc.php(56): DBConnection->initCustomDBConnection('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#5 /var/www/lib/pkp/classes/install/PKPInstall.inc.php(77): DBConnection->__construct('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#6 /var/www/lib/pkp/classes/install/Installer.inc.php(178): PKPInstall->preInstall()
+#7 /var/www/lib/pkp/classes/install/form/InstallForm.inc.php(196): I in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php on line 461" while reading response header from upstream, client: 192.168.16.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.16.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 10:23:37 [info] 9#9: *10 client closed connection while waiting for request, client: 192.168.16.1, server: 0.0.0.0:80
+2020/05/14 10:23:57 [info] 9#9: *13 client closed connection while waiting for request, client: 192.168.16.1, server: 0.0.0.0:80
+2020/05/14 10:56:21 [error] 9#9: *10 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php:461
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/adodb/adodb-php/adodb.inc.php(688): ADODB_mysql->_connect('mariadb', 'default', 'secret', '')
+#1 /var/www/lib/pkp/classes/db/DBConnection.inc.php(162): ADOConnection->Connect('mariadb', 'default', 'secret', NULL, false)
+#2 /var/www/lib/pkp/classes/db/DBConnection.inc.php(137): DBConnection->connect()
+#3 /var/www/lib/pkp/classes/db/DBConnection.inc.php(124): DBConnection->initConn()
+#4 /var/www/lib/pkp/classes/db/DBConnection.inc.php(56): DBConnection->initCustomDBConnection('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#5 /var/www/lib/pkp/classes/install/PKPInstall.inc.php(77): DBConnection->__construct('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#6 /var/www/lib/pkp/classes/install/Installer.inc.php(178): PKPInstall->preInstall()
+#7 /var/www/lib/pkp/classes/insta" while reading response header from upstream, client: 192.168.48.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.48.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 10:57:21 [info] 9#9: *11 client timed out (110: Operation timed out) while waiting for request, client: 192.168.48.1, server: 0.0.0.0:80
+2020/05/14 11:04:24 [info] 9#9: *14 client closed connection while waiting for request, client: 192.168.48.1, server: 0.0.0.0:80
+2020/05/14 11:04:25 [error] 12#12: *18 FastCGI sent in stderr: "PHP message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'default' at line 1" while reading response header from upstream, client: 192.168.48.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.48.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 11:05:24 [info] 12#12: *17 client timed out (110: Operation timed out) while waiting for request, client: 192.168.48.1, server: 0.0.0.0:80
+2020/05/14 11:44:45 [error] 9#9: *23 FastCGI sent in stderr: "PHP message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'default' at line 1" while reading response header from upstream, client: 192.168.48.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.48.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install/install"
+2020/05/14 11:45:35 [info] 9#9: *22 client closed connection while waiting for request, client: 192.168.48.1, server: 0.0.0.0:80
+2020/05/14 12:07:48 [info] 9#9: *2 client closed connection while waiting for request, client: 192.168.96.1, server: 0.0.0.0:80
+2020/05/14 12:08:03 [info] 12#12: *6 client closed connection while waiting for request, client: 192.168.96.1, server: 0.0.0.0:80
+2020/05/14 12:08:23 [error] 9#9: *11 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php:461
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/adodb/adodb-php/adodb.inc.php(688): ADODB_mysql->_connect('mysql', 'default', 'secret', '')
+#1 /var/www/lib/pkp/classes/db/DBConnection.inc.php(162): ADOConnection->Connect('mysql', 'default', 'secret', NULL, false)
+#2 /var/www/lib/pkp/classes/db/DBConnection.inc.php(137): DBConnection->connect()
+#3 /var/www/lib/pkp/classes/db/DBConnection.inc.php(124): DBConnection->initConn()
+#4 /var/www/lib/pkp/classes/db/DBConnection.inc.php(56): DBConnection->initCustomDBConnection('mysql', 'mysql', 'default', 'secret', NULL, false, 'utf8')
+#5 /var/www/lib/pkp/classes/install/PKPInstall.inc.php(77): DBConnection->__construct('mysql', 'mysql', 'default', 'secret', NULL, false, 'utf8')
+#6 /var/www/lib/pkp/classes/install/Installer.inc.php(178): PKPInstall->preInstall()
+#7 /var/www/lib/pkp/classes/install/form/" while reading response header from upstream, client: 192.168.96.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.96.4:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 12:08:33 [info] 9#9: *12 client closed connection while waiting for request, client: 192.168.96.1, server: 0.0.0.0:80
+2020/05/14 12:08:39 [error] 9#9: *11 FastCGI sent in stderr: "PHP message: php_network_getaddresses: getaddrinfo failed: Name or service not known" while reading response header from upstream, client: 192.168.96.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.96.4:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 12:08:51 [info] 9#9: *16 client closed connection while waiting for request, client: 192.168.96.1, server: 0.0.0.0:80
+2020/05/14 12:09:15 [info] 9#9: *19 client closed connection while waiting for request, client: 192.168.96.1, server: 0.0.0.0:80
+2020/05/14 12:23:19 [error] 9#9: *8 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /var/www/lib/pkp/lib/vendor/adodb/adodb-php/drivers/adodb-mysql.inc.php:461
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/adodb/adodb-php/adodb.inc.php(688): ADODB_mysql->_connect('mariadb', 'default', 'secret', '')
+#1 /var/www/lib/pkp/classes/db/DBConnection.inc.php(162): ADOConnection->Connect('mariadb', 'default', 'secret', NULL, false)
+#2 /var/www/lib/pkp/classes/db/DBConnection.inc.php(137): DBConnection->connect()
+#3 /var/www/lib/pkp/classes/db/DBConnection.inc.php(124): DBConnection->initConn()
+#4 /var/www/lib/pkp/classes/db/DBConnection.inc.php(56): DBConnection->initCustomDBConnection('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#5 /var/www/lib/pkp/classes/install/PKPInstall.inc.php(77): DBConnection->__construct('mysql', 'mariadb', 'default', 'secret', NULL, false, 'utf8')
+#6 /var/www/lib/pkp/classes/install/Installer.inc.php(178): PKPInstall->preInstall()
+#7 /var/www/lib/pkp/classes/insta" while reading response header from upstream, client: 192.168.128.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.128.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 12:23:33 [info] 9#9: *9 client closed connection while waiting for request, client: 192.168.128.1, server: 0.0.0.0:80
+2020/05/14 12:23:34 [error] 9#9: *8 FastCGI sent in stderr: "PHP message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'default' at line 1" while reading response header from upstream, client: 192.168.128.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.128.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 12:23:48 [info] 12#12: *13 client closed connection while waiting for request, client: 192.168.128.1, server: 0.0.0.0:80
+2020/05/14 12:25:06 [error] 9#9: *2 FastCGI sent in stderr: "PHP message: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'default' at line 1" while reading response header from upstream, client: 192.168.160.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.160.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install"
+2020/05/14 12:25:18 [error] 9#9: *2 FastCGI sent in stderr: "PHP message: Access denied for user 'ojs'@'192.168.160.6' (using password: YES)" while reading response header from upstream, client: 192.168.160.1, server: localhost, request: "POST /index.php/index/install/install HTTP/1.1", upstream: "fastcgi://192.168.160.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/install/install"
+2020/05/14 12:25:48 [info] 9#9: *7 client closed connection while waiting for request, client: 192.168.160.1, server: 0.0.0.0:80
+2020/05/14 12:26:26 [info] 9#9: *9 client closed connection while waiting for request, client: 192.168.160.1, server: 0.0.0.0:80
+2020/05/14 12:27:09 [info] 9#9: *28 client closed connection while waiting for request, client: 192.168.160.1, server: 0.0.0.0:80
+2020/05/14 12:28:16 [warn] 9#9: *54 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 192.168.160.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/grid/settings/plugins/settings-plugin-grid/fetch-grid?_=1589459292977 HTTP/1.1", upstream: "fastcgi://192.168.160.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/admin/wizard/1"
+2020/05/14 12:28:41 [error] 12#12: *66 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function bindtextdomain() in /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php:87
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php(46): Sokil\IsoCodes\AbstractDatabase->bindGettextDomain()
+#1 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/IsoCodesFactory.php(65): Sokil\IsoCodes\AbstractDatabase->__construct(NULL)
+#2 /var/www/lib/pkp/classes/user/form/RegistrationForm.inc.php(103): Sokil\IsoCodes\IsoCodesFactory->getCountries()
+#3 /var/www/lib/pkp/classes/form/Form.inc.php(151): RegistrationForm->fetch(Object(Request), NULL, true)
+#4 /var/www/lib/pkp/pages/user/RegistrationHandler.inc.php(58): Form->display(Object(Request))
+#5 /var/www/lib/pkp/classes/core/PKPRouter.inc.php(391): RegistrationHandler->register(Array, Object(Request))
+#6 /var/www/lib/pkp/classes/core/PKPPageRouter.inc.php(231): PKPRouter->_authorizeInitializeAndCallRequest(Array, Object(Request), Array, false)
+#7" while reading response header from upstream, client: 192.168.160.1, server: localhost, request: "GET /index.php/jth/user/register HTTP/1.1", upstream: "fastcgi://192.168.160.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/issue/current"
+2020/05/14 12:28:42 [error] 12#12: *66 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function bindtextdomain() in /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php:87
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php(46): Sokil\IsoCodes\AbstractDatabase->bindGettextDomain()
+#1 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/IsoCodesFactory.php(65): Sokil\IsoCodes\AbstractDatabase->__construct(NULL)
+#2 /var/www/lib/pkp/classes/user/form/RegistrationForm.inc.php(103): Sokil\IsoCodes\IsoCodesFactory->getCountries()
+#3 /var/www/lib/pkp/classes/form/Form.inc.php(151): RegistrationForm->fetch(Object(Request), NULL, true)
+#4 /var/www/lib/pkp/pages/user/RegistrationHandler.inc.php(58): Form->display(Object(Request))
+#5 /var/www/lib/pkp/classes/core/PKPRouter.inc.php(391): RegistrationHandler->register(Array, Object(Request))
+#6 /var/www/lib/pkp/classes/core/PKPPageRouter.inc.php(231): PKPRouter->_authorizeInitializeAndCallRequest(Array, Object(Request), Array, false)
+#7" while reading response header from upstream, client: 192.168.160.1, server: localhost, request: "GET /index.php/jth/user/register HTTP/1.1", upstream: "fastcgi://192.168.160.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/issue/current"
+2020/05/14 12:29:02 [warn] 9#9: *81 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 192.168.160.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/grid/settings/plugins/settings-plugin-grid/fetch-grid?_=1589459339728 HTTP/1.1", upstream: "fastcgi://192.168.160.6:9000", host: "localhost", referrer: "http://localhost/index.php/index/admin/wizard/1"
+2020/05/14 12:29:20 [error] 9#9: *92 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function bindtextdomain() in /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php:87
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php(46): Sokil\IsoCodes\AbstractDatabase->bindGettextDomain()
+#1 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/IsoCodesFactory.php(65): Sokil\IsoCodes\AbstractDatabase->__construct(NULL)
+#2 /var/www/lib/pkp/classes/user/form/RegistrationForm.inc.php(103): Sokil\IsoCodes\IsoCodesFactory->getCountries()
+#3 /var/www/lib/pkp/classes/form/Form.inc.php(151): RegistrationForm->fetch(Object(Request), NULL, true)
+#4 /var/www/lib/pkp/pages/user/RegistrationHandler.inc.php(58): Form->display(Object(Request))
+#5 /var/www/lib/pkp/classes/core/PKPRouter.inc.php(391): RegistrationHandler->register(Array, Object(Request))
+#6 /var/www/lib/pkp/classes/core/PKPPageRouter.inc.php(231): PKPRouter->_authorizeInitializeAndCallRequest(Array, Object(Request), Array, false)
+#7" while reading response header from upstream, client: 192.168.160.1, server: localhost, request: "GET /index.php/jth/user/register HTTP/1.1", upstream: "fastcgi://192.168.160.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/login"
+2020/05/14 12:31:39 [error] 9#9: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function bindtextdomain() in /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php:87
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php(46): Sokil\IsoCodes\AbstractDatabase->bindGettextDomain()
+#1 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/IsoCodesFactory.php(65): Sokil\IsoCodes\AbstractDatabase->__construct(NULL)
+#2 /var/www/lib/pkp/classes/user/form/RegistrationForm.inc.php(103): Sokil\IsoCodes\IsoCodesFactory->getCountries()
+#3 /var/www/lib/pkp/classes/form/Form.inc.php(151): RegistrationForm->fetch(Object(Request), NULL, true)
+#4 /var/www/lib/pkp/pages/user/RegistrationHandler.inc.php(58): Form->display(Object(Request))
+#5 /var/www/lib/pkp/classes/core/PKPRouter.inc.php(391): RegistrationHandler->register(Array, Object(Request))
+#6 /var/www/lib/pkp/classes/core/PKPPageRouter.inc.php(231): PKPRouter->_authorizeInitializeAndCallRequest(Array, Object(Request), Array, false)
+#7" while reading response header from upstream, client: 192.168.192.1, server: localhost, request: "GET /index.php/jth/user/register HTTP/1.1", upstream: "fastcgi://192.168.192.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/login"
+2020/05/14 12:32:35 [error] 9#9: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function bindtextdomain() in /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php:87
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php(46): Sokil\IsoCodes\AbstractDatabase->bindGettextDomain()
+#1 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/IsoCodesFactory.php(65): Sokil\IsoCodes\AbstractDatabase->__construct(NULL)
+#2 /var/www/lib/pkp/classes/user/form/RegistrationForm.inc.php(103): Sokil\IsoCodes\IsoCodesFactory->getCountries()
+#3 /var/www/lib/pkp/classes/form/Form.inc.php(151): RegistrationForm->fetch(Object(Request), NULL, true)
+#4 /var/www/lib/pkp/pages/user/RegistrationHandler.inc.php(58): Form->display(Object(Request))
+#5 /var/www/lib/pkp/classes/core/PKPRouter.inc.php(391): RegistrationHandler->register(Array, Object(Request))
+#6 /var/www/lib/pkp/classes/core/PKPPageRouter.inc.php(231): PKPRouter->_authorizeInitializeAndCallRequest(Array, Object(Request), Array, false)
+#7" while reading response header from upstream, client: 192.168.224.1, server: localhost, request: "GET /index.php/jth/user/register HTTP/1.1", upstream: "fastcgi://192.168.224.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/login"
+2020/05/14 12:33:55 [error] 9#9: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function bindtextdomain() in /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php:87
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php(46): Sokil\IsoCodes\AbstractDatabase->bindGettextDomain()
+#1 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/IsoCodesFactory.php(65): Sokil\IsoCodes\AbstractDatabase->__construct(NULL)
+#2 /var/www/lib/pkp/classes/user/form/RegistrationForm.inc.php(103): Sokil\IsoCodes\IsoCodesFactory->getCountries()
+#3 /var/www/lib/pkp/classes/form/Form.inc.php(151): RegistrationForm->fetch(Object(Request), NULL, true)
+#4 /var/www/lib/pkp/pages/user/RegistrationHandler.inc.php(58): Form->display(Object(Request))
+#5 /var/www/lib/pkp/classes/core/PKPRouter.inc.php(391): RegistrationHandler->register(Array, Object(Request))
+#6 /var/www/lib/pkp/classes/core/PKPPageRouter.inc.php(231): PKPRouter->_authorizeInitializeAndCallRequest(Array, Object(Request), Array, false)
+#7" while reading response header from upstream, client: 192.168.224.1, server: localhost, request: "GET /index.php/jth/user/register HTTP/1.1", upstream: "fastcgi://192.168.224.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/login"
+2020/05/14 12:34:15 [error] 9#9: *6 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Call to undefined function bindtextdomain() in /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php:87
+Stack trace:
+#0 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/AbstractDatabase.php(46): Sokil\IsoCodes\AbstractDatabase->bindGettextDomain()
+#1 /var/www/lib/pkp/lib/vendor/sokil/php-isocodes/src/IsoCodesFactory.php(65): Sokil\IsoCodes\AbstractDatabase->__construct(NULL)
+#2 /var/www/lib/pkp/classes/user/form/RegistrationForm.inc.php(103): Sokil\IsoCodes\IsoCodesFactory->getCountries()
+#3 /var/www/lib/pkp/classes/form/Form.inc.php(151): RegistrationForm->fetch(Object(Request), NULL, true)
+#4 /var/www/lib/pkp/pages/user/RegistrationHandler.inc.php(58): Form->display(Object(Request))
+#5 /var/www/lib/pkp/classes/core/PKPRouter.inc.php(391): RegistrationHandler->register(Array, Object(Request))
+#6 /var/www/lib/pkp/classes/core/PKPPageRouter.inc.php(231): PKPRouter->_authorizeInitializeAndCallRequest(Array, Object(Request), Array, false)
+#7" while reading response header from upstream, client: 192.168.224.1, server: localhost, request: "GET /index.php/jth/user/register HTTP/1.1", upstream: "fastcgi://192.168.224.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/login"
+2020/05/14 12:45:30 [info] 9#9: *11 client 172.18.0.1 closed keepalive connection
+2020/05/14 12:45:30 [info] 12#12: *14 client 172.18.0.1 closed keepalive connection
+2020/05/14 12:45:30 [info] 12#12: *13 client 172.18.0.1 closed keepalive connection
+2020/05/14 12:45:30 [info] 9#9: *10 client 172.18.0.1 closed keepalive connection
+2020/05/14 12:45:30 [info] 12#12: *12 client 172.18.0.1 closed keepalive connection
+2020/05/14 12:45:30 [info] 9#9: *6 client 172.18.0.1 closed keepalive connection
+2020/05/15 05:39:36 [info] 9#9: *2 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2020/05/15 05:41:22 [info] 9#9: *7 client timed out (110: Operation timed out) while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2020/05/15 06:49:59 [info] 9#9: *41 client closed connection while waiting for request, client: 172.18.0.1, server: 0.0.0.0:80
+2020/05/15 12:00:34 [info] 9#9: *9 client closed connection while waiting for request, client: 172.19.0.1, server: 0.0.0.0:80
+2020/05/15 12:23:11 [info] 9#9: *194 client 172.19.0.1 closed keepalive connection
+2020/05/15 12:23:32 [info] 9#9: *195 client 172.19.0.1 closed keepalive connection
+2020/05/15 12:23:39 [info] 9#9: *196 client 172.19.0.1 closed keepalive connection
+2020/05/15 12:23:49 [info] 9#9: *197 client 172.19.0.1 closed keepalive connection
+2020/05/15 12:23:54 [info] 9#9: *198 client 172.19.0.1 closed keepalive connection
+2020/05/15 12:24:00 [info] 9#9: *199 client 172.19.0.1 closed keepalive connection
+2020/05/19 11:17:27 [info] 9#9: *2 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2020/05/19 11:18:46 [info] 9#9: *5 client timed out (110: Operation timed out) while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2020/05/19 11:18:46 [error] 9#9: *1 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.21.0.1, server: localhost, request: "POST /index.php/jth/login/signIn HTTP/1.1", upstream: "fastcgi://172.21.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/login?source=%2Findex.php%2Fjth%2Fsubmission%2Fwizard"
+2020/05/19 11:19:32 [info] 9#9: *8 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2020/05/19 11:21:25 [info] 9#9: *15 client timed out (110: Operation timed out) while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2020/05/19 11:21:25 [error] 9#9: *16 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.21.0.1, server: localhost, request: "GET /index.php/jth/submission/wizard HTTP/1.1", upstream: "fastcgi://172.21.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/login?source=%2Findex.php%2Fjth%2Fsubmission%2Fwizard"
+2020/05/19 11:22:05 [info] 9#9: *18 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2020/05/19 11:24:38 [error] 9#9: *25 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.21.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/page/page/user-nav-backend?_=1589887417958 HTTP/1.1", upstream: "fastcgi://172.21.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard?XDEBUG_SESSION_START=19955"
+2020/05/19 11:31:10 [info] 9#9: *40 client closed connection while waiting for request, client: 172.21.0.1, server: 0.0.0.0:80
+2020/05/19 11:32:10 [error] 9#9: *41 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.21.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/page/page/user-nav-backend?_=1589887869919 HTTP/1.1", upstream: "fastcgi://172.21.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard/2?submissionId=1"
+2020/05/19 11:32:10 [error] 9#9: *44 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.21.0.1, server: localhost, request: "GET /index.php/jth/submission/step/2?submissionId=1&sectionId=0&_=1589887869920 HTTP/1.1", upstream: "fastcgi://172.21.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard/2?submissionId=1"
+2020/05/19 11:33:56 [info] 9#9: *47 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.21.0.1, server: localhost, request: "GET /index.php/jth/submission/step/1?submissionId=1&sectionId=0&_=1589887869921 HTTP/1.1", upstream: "fastcgi://172.21.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard/2?submissionId=1"
+2020/05/19 11:35:07 [error] 9#9: *52 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.21.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/wizard/file-upload/file-upload-wizard/start-wizard?fileStage=2&reviewRoundId=&submissionId=1&stageId=1&uploaderRoles=16-17-4097-65536&_=1589888036362 HTTP/1.1", upstream: "fastcgi://172.21.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard/2?submissionId=1"
+2020/05/19 12:14:26 [info] 9#9: *1 client closed connection while waiting for request, client: 172.27.0.1, server: 0.0.0.0:80
+2020/05/19 12:15:36 [error] 9#9: *2 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/page/page/user-nav-backend?_=1589890475801 HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard?XDEBUG_SESSION_START=10006"
+2020/05/19 12:17:05 [error] 9#9: *11 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/page/page/user-nav-backend?_=1589890565424 HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard?XDEBUG_SESSION_START=16345"
+2020/05/19 12:18:14 [info] 9#9: *17 client timed out (110: Operation timed out) while waiting for request, client: 172.27.0.1, server: 0.0.0.0:80
+2020/05/19 12:18:14 [error] 9#9: *11 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/submissions HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard?XDEBUG_SESSION_START=16345"
+2020/05/19 12:20:34 [error] 9#9: *20 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/page/page/user-nav-backend?_=1589890774634 HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submissions"
+2020/05/19 12:20:34 [error] 9#9: *19 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/api/v1/_submissions?status%5B%5D=4&status%5B%5D=3&status%5B%5D=5&assignedTo=2&searchPhrase=&count=20&offset=0&_=1589890774635 HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submissions"
+2020/05/19 12:21:18 [info] 9#9: *25 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/submissions HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost"
+2020/05/19 12:21:30 [info] 9#9: *26 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/submission/wizard/2?submissionId=1 HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submissions"
+2020/05/19 12:21:33 [info] 9#9: *29 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/submission/wizard HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost"
+2020/05/19 12:22:44 [info] 9#9: *32 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.27.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost"
+2020/05/19 12:23:30 [info] 9#9: *36 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/page/page/user-nav-backend?_=1589890994447 HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submissions"
+2020/05/19 12:27:47 [info] 9#9: *55 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 172.27.0.1, server: localhost, request: "GET /index.php/jth/$$$call$$$/page/page/user-nav-backend?_=1589891207734 HTTP/1.1", upstream: "fastcgi://172.27.0.6:9000", host: "localhost", referrer: "http://localhost/index.php/jth/submission/wizard"

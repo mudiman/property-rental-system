@@ -1,0 +1,1 @@
+Property '{{$property_title}}' viewing confirmed by {{$conductor_first_name}} on {{$viewing_start_date_time->toFormattedDateString()}} at {{$viewing_start_date_time->setTimezone($timezone)->format('g:i a')}}

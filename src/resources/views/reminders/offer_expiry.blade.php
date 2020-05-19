@@ -1,0 +1,1 @@
+Reminder for offer expiry for offer id {{$id}} on property '{{$property_title}}'

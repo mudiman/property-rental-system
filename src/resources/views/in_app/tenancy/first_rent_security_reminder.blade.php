@@ -1,0 +1,1 @@
+Please payout your first rent with security for tenancy property '{{$property_title}}'

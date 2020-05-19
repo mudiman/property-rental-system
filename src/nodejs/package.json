@@ -1,0 +1,20 @@
+{
+  "name": "smoor-node",
+  "version": "1.0.0",
+  "description": "Smoor node server for socket communication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mudassar Ali",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "ioredis": "^3.1.4",
+    "socket.io": "^2.0.3"
+  }
+}

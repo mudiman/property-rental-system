@@ -1,0 +1,1 @@
+Initial deposit of {{$security_holding_deposit_amount}} made for property '{{$property_title}}'

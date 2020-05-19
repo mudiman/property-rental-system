@@ -1,0 +1,1 @@
+Payout reminder for first rent with security, for tenancy id {{$id}} on property {{$property_title}}

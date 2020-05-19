@@ -1,0 +1,1 @@
+Viewing request was canceled for property '{{$property_title}}'

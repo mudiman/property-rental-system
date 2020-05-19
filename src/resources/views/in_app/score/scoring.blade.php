@@ -1,0 +1,1 @@
+You have recieved {{$score_change}} score for {{$scoreable_type}}

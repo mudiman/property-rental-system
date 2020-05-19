@@ -1,0 +1,1 @@
+Reminder to update payout details for property {{$property_title}} before automatic rent deduction on {{$due_date}}

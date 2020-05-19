@@ -1,0 +1,1 @@
+Offer canceled by the system due to expiry

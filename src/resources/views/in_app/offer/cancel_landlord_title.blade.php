@@ -1,0 +1,1 @@
+Offer has been cancel by landlord

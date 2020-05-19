@@ -1,0 +1,1 @@
+{{$from_first_name}} reviewed {!! $review !!}

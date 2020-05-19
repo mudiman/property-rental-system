@@ -1,0 +1,1 @@
+Reminder for move-in for tenancy id {{$id}} on property '{{$property_title}}'

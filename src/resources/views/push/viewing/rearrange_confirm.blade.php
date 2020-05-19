@@ -1,0 +1,1 @@
+@include('in_app.viewing.rearrange_confirm')

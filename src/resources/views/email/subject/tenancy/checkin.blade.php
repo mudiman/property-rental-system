@@ -1,0 +1,1 @@
+Tenant has checked-in

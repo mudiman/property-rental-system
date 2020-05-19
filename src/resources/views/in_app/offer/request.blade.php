@@ -1,0 +1,1 @@
+{{$tenant_first_name}} has sent an offer of {{$format_amount}} for your property '{{$property_title}}'

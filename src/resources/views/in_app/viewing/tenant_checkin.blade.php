@@ -1,0 +1,1 @@
+{{$tenant_first_name}} just checked-in for viewing for property '{{$property_title}}'

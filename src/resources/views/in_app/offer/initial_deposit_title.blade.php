@@ -1,0 +1,1 @@
+Initial deposit has been made to your accepted offer

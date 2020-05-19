@@ -1,0 +1,1 @@
+Failed to transfer payment

@@ -1,0 +1,1 @@
+{{$created_by_first_name}} has sent counter offer of {{$format_amount}} for property '{{$property_title}}'

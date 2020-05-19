@@ -1,0 +1,1 @@
+@include('in_app.viewing.tenant_checkin')

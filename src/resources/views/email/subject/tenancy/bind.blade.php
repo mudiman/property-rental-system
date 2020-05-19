@@ -1,0 +1,1 @@
+Tenancy has reached binding agreement

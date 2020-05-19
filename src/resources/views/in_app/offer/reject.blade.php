@@ -1,0 +1,1 @@
+Offer was rejected by {{$updated_by_first_name}}. Why not message {{$updated_by_first_name}} and start a negotiation?

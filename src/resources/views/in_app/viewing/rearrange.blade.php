@@ -1,0 +1,1 @@
+{{$updated_by_first_name}} rearranged viewing for property '{{$property_title}}' on {{ $viewing_start_date_time->toFormattedDateString()}} at {{$viewing_start_date_time->setTimezone($timezone)->format('g:i a')}}

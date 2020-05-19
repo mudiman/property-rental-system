@@ -1,0 +1,1 @@
+Tenancy id {{$transactionable_id}} has due transaction of amount {{$format_amount}}.

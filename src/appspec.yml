@@ -1,0 +1,28 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/smoor
+permissions:
+   - object: /home/ubuntu/smoor
+     pattern: "**"
+     owner: ubuntu
+     group: ubuntu
+     mode: 755
+     type:
+       - file
+       - directory
+hooks:
+  ApplicationStop:
+    - location: ./scripts/applicationstop.sh
+      runas: ubuntu
+  BeforeInstall:
+    - location: ./scripts/beforeinstall.sh
+      runas: ubuntu
+  AfterInstall:
+    - location: ./scripts/afterinstall.sh
+      timeout: 300
+      runas: ubuntu
+  ValidateService:
+    - location: ./scripts/validateservice.sh
+      runas: ubuntu

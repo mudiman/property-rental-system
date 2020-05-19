@@ -1,0 +1,1 @@
+Smoor admin has verified your account

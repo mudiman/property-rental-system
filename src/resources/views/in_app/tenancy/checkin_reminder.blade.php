@@ -1,0 +1,1 @@
+{{$tenant_first_name}} please remember to checked-in property '{{$property_title}}'

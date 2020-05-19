@@ -1,0 +1,1 @@
+{{$arbitrator_first_name}} has accepted your offer

@@ -1,0 +1,1 @@
+{{$tenant_first_name}} offer for property '{{$property_title}}' has expired.
